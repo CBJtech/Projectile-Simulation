@@ -1,0 +1,62 @@
+
+.container{
+   
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: move;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes move {
+    from{
+        scale: 0.3;
+    }
+    to{
+        scale: 1;
+    }
+}
+canvas {
+    border: 3px solid black;
+    width: 1200px;
+    height: 400px;
+}
+button{
+    cursor: pointer;
+    padding: 0.4rem;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    transition: 0.6s;
+}
+button:hover{
+    opacity: 0.8;
+}
+.miniContainer{
+    padding: 0.5rem;
+    width: 30rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    box-shadow: 4px 4px 30px rgb(0.4, 0.4, 0.4, 0.4);
+   
+}
+@media screen and (max-width: 768px) {
+    .canvas{
+        width: 95%;
+    }
+    .container{
+        width: 20rem;
+    }
+    .miniContainer{
+        width: 90%;
+    }
+}

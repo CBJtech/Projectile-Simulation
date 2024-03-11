@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projectile Trajectory Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="miniContainer">
+        <label for="velocity">Initial Velocity (m/s):</label>
+        <input type="number" id="velocity">
+        <br> <br>
+        <label for="angle">Launch Angle (degrees):</label>
+        <input type="number" id="angle">
+        <br><br>
+        <button onclick="startSimulation()">Start Simulation</button>
+        <br> <br>
+        <div id="time"></div>
+    </div> <br>
+</div>
+        <canvas id="canvas"></canvas>
+        
+        <footer>
+            <h5>
+              <a href="https://cbjtech.github.io/portfolio/">CBJ.</a>
+              &copy; 2023
+            </h5>
+          </footer>
+          
+    <script src="main.js"></script>
+</body>
+</html>
